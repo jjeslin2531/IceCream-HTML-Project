@@ -1,0 +1,169 @@
+<!--- Jeslin Joseph
+	  ID# 1001397199-->
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+   <head>
+		<meta charset="utf-8">
+		<title>Info</title>
+		<link rel="stylesheet" type="text/css" href="4315_Lab2External_jxj7199.css">
+		<link rel="stylesheet" type="text/css" href="menuStyle.css">
+
+	</head>
+
+
+	<body onload="checkCookie(), setTimeout(runclock(),5000);">
+
+		<h1 style="margin: auto; padding: 0; text-align: center;">Jeslin's Ice Cream</h1>
+		<h2 style="text-size: .8em; margin: auto; padding: 0; text-align: center;">Home</h2>
+		<br>
+		<!--The nav element below is another option for creating a menu.  The pages referenced here do not exist in this folder, but it gives you an example of how to create the
+			menu.-->
+		<div id ="menu" style="text-align: center; width: 110%">
+             <nav>
+             <a href = "index.htm" style="color: black; font-size: 1.1em;">Home</a>
+             &nbsp;
+				 <a href = "product_JJ.htm" style="color: black; font-size: 1.1em;">Products</a>
+             &nbsp;
+             <a href = "contact_JJ.htm" style="color: black; font-size: 1.1em;">Contact Us</a>
+             &nbsp;
+             <a href = "about_JJ.htm" style="color: black; font-size: 1.1em;">About Us</a>
+             &nbsp;
+             </nav>
+       </div> 
+
+		<script type="text/JavaScript">
+			// There were a lot of message boxes (dialogs) in th example originally, so I took some of them out below. 
+			var cName, cValue, c, expires;
+			var d = new Date();
+          
+			function createCookie() 
+			{
+				cName="userName";
+				user=prompt("Please enter your name: ");
+				if(user != null)
+				{
+			  		d.setTime(d.getTime() + (7 * 24 * 60 * 60 * 1000));
+			  		expires = "expires="+d.toUTCString();
+			  		document.cookie = cName + "=" +user+ ";" + expires;
+			  		displayCookie("new",user);
+			  	}
+
+			}
+
+			function runclock()
+			{
+				var number=Math.ceil(Math.random() * 10);
+				if(number % 5 == 0)
+				{
+					if(confirm("You have been randomly selected to participate in a customer satisfaction survey.") == true)
+					{
+						window.open("4315_Lab1_jxj7199.htm");
+					}
+					
+				}
+
+			}
+
+			function readCookie(cName) 
+			{
+				var keyName = cName + "=";
+				let decodedCookie = decodeURIComponent(document.cookie);
+			  	var cArray = decodedCookie.split(';');
+			  	for(var i = 0; i < cArray.length; i++) 
+			  	{
+			  	//loop through the array of key/value pairs from the cookie
+			    	c = cArray[i];
+			    	while (c.charAt(0) == ' ') 
+			    	{
+			     		c = c.substring(1);
+			    	}	
+			    	if (c.indexOf(keyName) == 0) 
+				    {
+				      return c.substring(keyName.length, c.length);
+				    }
+			  	}
+			  return "";
+			}
+
+			//check for cookie
+			function checkCookie() 
+			{
+
+				// call the function to read the cookie (that function will return the user name if found)
+
+				//check the return value from the function that read the cookie and take the necessary actions
+				//if the cookie was found, update the page content with the user's name
+				//else prompt the user for his/her name and call the displayCookie() function 
+
+			  var user = readCookie("userName");
+
+			 //***************************************************************************************************
+			 //To delete an existing cookie for testing purposes, you can uncomment the following code:
+			 document.cookie = "userName=;expires=" + d.toUTCString(-1);
+			 //***************************************************************************************************
+			  
+			  //If the cookie exists and has a key/value pair stored, display the name in a welcome dialog box, and show
+			  // the key/value pair info on the web page
+			  if (user != "") 
+			  {
+			    //alert("Cookie exists.");
+			    displayCookie("Existing" ,user) ;
+			  } 
+			  else 
+			  {
+			  	//if key/value pair does not exist, prompt the user for a name
+			    //user = document.getElementById("provide");
+			    //check to make sure a value was entered and if so, create the cookie with an expiration date of 14 days
+			    
+			    if (user != "" && user != null) 
+			    	{
+			    		createCookie("userName", user);
+						displayCookie("new", user) ;
+			    	}
+			  }
+			}
+
+			function displayCookie(userType, user)
+			{
+				//this function will be called to update the page content to display the cookie data after he/she provides a name in the prompt dialog box
+
+				//create an large heading on the page
+			  	//display appropriate text based on type of user
+			  	if (userType == "Existing")
+			  	{
+			  		document.getElementById("personal").innerHTML = "Welcome, "+user+"! We hope you will enjoy your Jeslin's Ice Cream Experience!";
+			  		document.getElementById("provide").innerHTML = "Please click here if you are not " +user+ ".";
+
+			  	}
+			  	else
+			  	{
+			  		var styling = document.getElementById("personal");
+			  		styling.innerHTML = "Welcome, "+user+"! We hope you will enjoy your Jeslin's Ice Cream Experience!";
+			  		document.getElementById("provide").style.display = "none";
+			  		
+			  	}
+			}
+
+		</script>
+		
+		<div>
+			<p class="paragraph">Jeslin's Ice Cream was established in 1999 and is located in Grand Prairie. We have all types of flavors for you to mix and match. We also offer different toppings to be added to your customized Ice Cream such as nuts, sprinkles or whipped cream. Jeslin's Ice Cream shop is a fun and causal place for families and kids to enjoy their delicious desert. We will feel confident for you to enjoy our delicious Ice Cream.</p>
+		</div>
+			<img class="img1" src="Icecream.jpeg" alt= "Ice Cream picture"/>
+
+		<div>
+
+			<img class="img2" src="28253.jpeg" alt= "Ice Cream picture"/>
+			<p id="personal">Want a more personalized experience on our website?</p>
+			<a href=# id="provide" onclick="createCookie()" >Please click here to provide your name</a>
+
+		</div>
+
+	</body>
+
+</html>
+
+

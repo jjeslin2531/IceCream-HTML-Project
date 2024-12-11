@@ -1,0 +1,20 @@
+/* Jeslin Joseph
+   INSY 4315-002
+   Project 2- External CSS
+*/
+
+h1             {text-align: center;}
+
+div            {width: 70%;}
+
+.img1          {float: right; width: 15%;padding-right: 1%;} 
+
+.paragraph     {float: left;font-size: 1.5em; text-align: left; color: black; padding-bottom: 35%;}
+
+.img2          {float: left; width: 20%; padding-left: 2%; padding-right: 10%;}
+
+body           {padding-right: 10%; background-color: thistle;}
+
+a              {font-size: 1.2em;padding-left: 2%;}
+
+p              {font-size: 1.2em;text-align: center;padding-right: 10%;}

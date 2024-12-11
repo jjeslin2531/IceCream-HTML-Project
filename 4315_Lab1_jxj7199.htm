@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- Jeslin Joseph
+      ID 1001397199-->
+
+  <html lang="en">
+
+    <head>
+      <meta charset="utf-8"/>
+      <title>Survey</title>
+      <style>
+
+        div   {float: left; width: 70%;}
+
+        img   {width: 75%;  height: auto; padding-right: 15%;} 
+
+        h1    {text-align: center;}
+
+        body  {padding-right: 10%; padding-left: 10%; background-color: thistle; }
+
+        p     {font-size: 1.4em; text-align: justify; padding: 5%; color: black;}
+
+        h2    {text-align: center;}
+
+        table  {margin-right: auto; margin-left: auto; max-width: 60%;}
+
+        th    {font-size: 150%;}
+
+        li    {font-size: 1.2em;}
+
+        label {font-size: 1.2em;}
+
+
+      </style>
+
+    </head>
+
+    <body>
+  
+      <h1>Thank you for choosing Jeslin's Ice Cream!</h1>
+ 
+      <div><p>You have been randomly selected to participate in our Customer Satisfaction Survey. Please tell us a little bit about yourself 
+      by filling in the requested information at the top of the survey, then respond to the survey opinion statements based on your experiences
+       with Jeslin's Ice Cream. To show our appreciation, we will send you a $5 Jeslin's Ice Cream eGift Certificate via e-mail. </p></div> 
+  
+      <img src="Icecream.jpeg" alt= "Ice Cream picture" style= "padding-left: 2%; padding-right: 2%;width: 20%;"/>
+
+
+      <hr>  
+      <form>
+
+        <table>
+          <thead>
+            <tr>
+              <th colspan="4">Personal Information</th>
+            </tr>         
+          </thead>
+
+          <tbody>
+            <tr>
+              <td style="text-align:right;"><label>First Name:</label></td>
+              <td><input name="fname" type="text" size="21" maxlength="21" required autofocus></td>
+              <td style="text-align: right;"><label>Last Name:</label></td>
+              <td><input name="lname" type="text" size="21" maxlength="21" required></td>
+            </tr>
+            <tr>
+              <td style="text-align: right;"><label>E-mail Address:</label></td>
+              <td><input name="email" type="email" size="21" placeholder= "Joe@gmail.com" required></td>
+            </tr>
+            <tr>
+              <td style="text-align: right;"><label>Gender:</label></td>
+                <td><label>Male</label><input name="Gender" type="radio" value="Male" required>
+                <label>Female</label><input name="Gender" type="radio" value="Female"></td>
+            </tr>
+            <tr>
+              <td style="text-align: right;"><label>Age Group:</label></td>
+                <td colspan="2"><label>Under 21</label><input name="Age" type="radio" value="Under 21" required>
+                <label>21-40</label><input name="Age" type="radio" value="21-40">
+                <label>Over 40</label><input name="Age" type="radio" value="Over 40"></td>
+            </tr>
+          </tbody>
+        </table>
+        
+
+<hr> 
+            
+    <h2>Please respond to the opinion statements using the following scale:</h2>
+
+        <ul style="margin-left: 370px;">
+          <li>1 = Strongly Agree </li>
+          <li>2 = Somewhat Agree </li>
+          <li>3 = Neither Agree nor Disagree</li>
+          <li>4 = Somewhat Disagree</li>
+          <li>5 = Strongly Disagree</li>
+        </ul>       
+      <ol style="margin-left: 210px;">
+        <li> Jeslin's Ice Cream products are always fresh. 
+          <select name="answer" id="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li> Jeslin's Ice Cream products have an appealing aroma.
+          <select name="answer1" id="rating1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li> Jeslin's Ice Cream products are reasonably priced.
+          <select name="answer2" id="rating2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li> Jeslin's Ice Cream products are of the highest quality.
+          <select name="answer3" id="rating3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+        <li> Overall, I am very satisfied with Jeslin's Ice Cream products.
+          <select name="answer4" id="rating4">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </li>
+      </ol> 
+          <input style="margin-left: 210px;" type="submit" value="Submit">
+          <input type="reset" value="Reset">
+      </form>
+    </body>
+</html>

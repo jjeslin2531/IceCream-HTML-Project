@@ -1,0 +1,72 @@
+[
+	{
+		"prodID": 101, 
+		"prodImg": "ButterPecan.png",
+		"prodName": "Butter Pecan",
+		"prodDesc": "Smooth vanilla ice cream with a slight buttery flavor, with pecans added.",
+		"prodPrice": 10.99
+	},
+	{
+		"prodID": 102,
+		"prodImg": "Butterscotch.png",
+		"prodName": "Butterscotch",
+		"prodDesc": "Butterscotch is a sweet and crunchy frozen dessert made using praline. It has a nutty buttery flavor.",
+		"prodPrice": 10.99
+	},
+	{
+		"prodID": 103,
+		"prodImg": "Chocolate.png",
+		"prodName": "Chocolate",
+		"prodDesc": "Chocolate ice cream tastes like deep rich coco powder ",
+		"prodPrice": 9.99
+	},
+	{
+		"prodID": 104, 
+		"prodImg": "ChocolateChip.png",
+		"prodName": "Chocolate Chip",
+		"prodDesc": "Chocolate Chip Ice cream is made with a creamy vanilla base and chocolate chunks.",
+		"prodPrice": 10.99
+	},
+	{
+		"prodID": 105, 
+		"prodImg": "ChocolateChipCookieDough.png",
+		"prodName": "Chocolate Chip Cookie Dough",
+		"prodDesc": "Chocolate Chip Cookie Dough is unbaked chunks of chocolate chip cookie dough which are embedded in vanilla flavored ice cream.",
+		"prodPrice": 11.99
+	},
+	{
+		"prodID": 106, 
+		"prodImg": "CookiesnCream.png",
+		"prodName": "Cookies N' Cream",
+		"prodDesc": "Cookies and Cream is a rich and creamy vanilla ice cream stuffed full of chunks of Oreo cookies. ",
+		"prodPrice": 10.99
+	},
+	{
+		"prodID": 107,
+		"prodImg": "MintChocolateChip.png",
+		"prodName": "Mint Chocolate Chip",
+		"prodDesc": "Mint Chocolate Chip ice cream composed of mint ice cream with small chocolate chips.",
+		"prodPrice": 10.99
+	},
+	{
+		"prodID": 108,
+		"prodImg": "Neapolitan.png",
+		"prodName": "Neapolitan",
+		"prodDesc": "Neapolitan is a type of ice cream composed of three separate flavors of vanilla, chocolate, and strawberry arranged side by side.",
+		"prodPrice": 10.99
+	},
+	{
+		"prodID": 109, 
+		"prodImg": "Strawberry.png",
+		"prodName": "Strawberry",
+		"prodDesc": "Made with fresh strawberries and is very creamy and smooth.",
+		"prodPrice": 9.99
+	},
+	{
+		"prodID": 110, 
+		"prodImg": "Vanilla.png",
+		"prodName": "Vanilla",
+		"prodDesc": "The classic ice cream made by blending vanilla essence giving that vanilla aroma. ",
+		"prodPrice": 9.99
+	}
+]

@@ -1,0 +1,22 @@
+	
+	
+
+	nav	{
+			font-size: 1.2em;
+		   	background-color: mediumpurple;
+			border-style: ridge;
+			border-color: gray;	
+
+			}
+
+	nav a	{
+		   	color: black;
+		   	padding: 1px 80px ;
+			display: inline;
+			}
+
+	nav a:hover	{
+			background-color:lightpink;
+			color: blue;
+			display: inline;
+			}

@@ -1,0 +1,77 @@
+
+<!DOCTYPE HTML>
+
+<!--Jeslin Joseph
+	ID# 1001397199 -->
+
+<html lang = "en">
+	<head>
+
+		<meta charset = "utf-8">
+		<title> Jeslin's Ice Cream - Products</title>
+		
+		<!-- Link to the style sheets -->
+		<link rel="stylesheet" type="text/css" href="webPageStyle.css">
+		<link rel="stylesheet" type="text/css" href="menuStyle.css">
+		<link rel="stylesheet" type="text/css" href="prodTableStyle.css">
+
+	</head>
+	
+	<body>
+		<h1> Jeslin's Ice Cream</h1>
+		<h2 style="text-size: .8em">Our Products</h2>
+		<br>
+		<!--The nav element below is another option for creating a menu.  The pages referenced here do not exist in this folder, but it gives you an example of how to create the
+			menu.-->
+		<div id ="menu" style="text-align: center; width: 100%">
+                <nav>
+                <a href = "index.htm" style="color: black; font-size: 1.1em;">Home</a>
+                &nbsp;
+				<a href = "product_JJ.htm" style="color: black; font-size: 1.1em;">Products</a>
+                &nbsp;
+                <a href = "Contact_JJ.htm" style="color: black; font-size: 1.1em;">Contact Us</a>
+                &nbsp;
+                <a href = "About_JJ.htm" style="color: black; font-size: 1.1em;">About Us</a>
+                &nbsp;
+                </nav>
+        </div>   
+		
+		
+		<form action="#" style="text-align: center">
+		<div style="text-align: center; width: 90%;">
+		<br>
+		<p>
+		<table align="center">
+			<thead>
+				<tr>
+					<th><a id="sortID" href="javascript:sortByID( )" style="text-decoration-line: underline; color: brown;">Product ID</a></th>
+					<th><a></a></th>
+					<th><a id="sortName" href="javascript:sortByName( )" style="text-decoration-line: underline; color: brown">Product Name</a></th>
+					<th><a style="text-decoration-line: none; color: brown">Product Description</a></th>
+					<th><a id="sortPrice" href="javascript:sortByPrice( )" style="text-decoration-line: underline; color: brown">Product Price</a></th>
+					<th><a style="text-decoration-line: none; color: brown">Quantity</a></th>
+			</thead>
+			(Click a Column Heading to Sort)
+			<tbody id = "tbodyRows" style="color: black;">
+			</tbody>
+		</table>
+		</p>
+		</div>			
+		
+		<p style="width: 80%; text-align: right">
+			<input type="submit" value="Confirm" onclick = "javascript:confirmQty();">
+			<input type="reset" value="Reset" onclick="javascript: return confirmreset();">
+		</p>
+
+		<script src="main.js"></script>
+
+        
+		
+    	</form>
+
+    
+
+	</body>
+			
+
+</html>
